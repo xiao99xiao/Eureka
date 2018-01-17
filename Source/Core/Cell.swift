@@ -55,7 +55,11 @@ open class BaseCell: UITableViewCell, BaseCellType {
         return nil
     }
 
-    open func setup() {}
+    open func setup() {
+        self.textLabel?.textColor = UIColor(red:0.20, green:0.20, blue:0.20, alpha:1.00)
+        self.textLabel?.font = UIFont.systemFont(ofSize: 14.0)
+        self.detailTextLabel?.font = UIFont.systemFont(ofSize: 14.0)
+    }
     open func update() {}
 
     open func didSelect() {}
