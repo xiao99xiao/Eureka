@@ -125,7 +125,7 @@ open class Cell<T>: BaseCell, TypedCellType where T: Equatable {
     open override func update() {
         super.update()
         textLabel?.text = row.title
-        textLabel?.textColor = row.isDisabled ? .gray : .black
+        textLabel?.textColor = row.isDisabled ? .gray : UIColor(red:0.20, green:0.20, blue:0.20, alpha:1.00)
         detailTextLabel?.text = row.displayValueFor?(row.value) ?? (row as? NoValueDisplayTextConformance)?.noValueDisplayText
     }
 
