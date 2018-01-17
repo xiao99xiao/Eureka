@@ -39,7 +39,7 @@ open class ListCheckCell<T: Equatable> : Cell<T>, CellType {
         accessoryType = row.value != nil ? .checkmark : .none
         editingAccessoryType = accessoryType
         selectionStyle = .default
-        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        var red: CGFloat = 0.20, green: CGFloat = 0.20, blue: CGFloat = 0.20, alpha: CGFloat = 1
         tintColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
         if row.isDisabled {
             tintColor = UIColor(red: red, green: green, blue: blue, alpha: 0.3)
